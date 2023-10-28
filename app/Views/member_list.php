@@ -54,7 +54,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Users</h3>
+                            <!-- <h3 class="card-title">Users</h3> -->
                             <a class="btn btn-app" href="<?php echo route_to('member/add') ?>">
                                 <i class="fas fa-plus"></i>
                             </a>

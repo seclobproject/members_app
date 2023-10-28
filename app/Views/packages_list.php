@@ -25,7 +25,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Members</h3>
+                            <!-- <h3 class="card-title">Members</h3> -->
                             <a class="btn btn-app" href="<?php echo route_to('package/add') ?>">
                                 <i class="fas fa-plus"></i>
                             </a>

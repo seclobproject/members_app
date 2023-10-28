@@ -3,7 +3,6 @@
  namespace App\Controllers;
  use CodeIgniter\Controller;
  use App\Models\MemberModel;
-
 class Member extends Controller
 {
     public function index()

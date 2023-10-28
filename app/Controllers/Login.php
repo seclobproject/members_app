@@ -48,10 +48,8 @@ class Login extends BaseController
             $tmp_sponsor = (array) $result_sponsor;            
             if(count($tmp_sponsor) > 0){                
                 $_SESSION['sponsor_id'] = $result_sponsor->sponsor_id;
-                print $result_sponsor->sponsor_id;
-                die();
             }
-            return redirect()->redirect("/package");
+            return redirect()->redirect("/packages");
         }else{
             return redirect()->redirect("/login");
         }
