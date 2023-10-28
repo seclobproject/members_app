@@ -831,3 +831,27 @@ in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
 11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-28 12:58:20 --> mysqli_sql_exception: Column 'add_on_users' cannot be null in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pa...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\PackageModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Package.php(55): App\Models\PackageModel->add(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Package->save()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-28 12:58:20 --> Column 'add_on_users' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `package_tbl` (`package_name`, `package_amount`, `package_gst_excluded`, `users`, `add_on_users`) VALUES (:package_name:, :package_amount:, :package_gst_excluded:, :users:, :add_on_users:)', [...], false)
+ 2 APPPATH\Models\PackageModel.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Package.php(55): App\Models\PackageModel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')

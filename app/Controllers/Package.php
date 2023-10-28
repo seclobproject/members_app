@@ -40,9 +40,9 @@ class Package extends Controller
         $data = $_POST;
         $planName = $this->request->getPost('planName');
         $amount = $this->request->getPost('amount');
-        $amountGst = $this->request->getPost('amountGst');
+        $amountGst = $this->request->getPost('amount_gst');
         $users = $this->request->getPost('users');
-        $addOnUsers = $this->request->getPost('addOnUsers');
+        $addOnUsers = $this->request->getPost('add_on');
 
         $data = [
             'package_name' => $planName,
@@ -58,7 +58,7 @@ class Package extends Controller
         } else {
             echo "Something went wrong";
         }
-        return redirect()->redirect("/package");
+        return redirect()->redirect("/packages");
     }
 
     public function list()

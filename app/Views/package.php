@@ -45,16 +45,16 @@
                 </div>
                 <div class="form-group">
                   <label for="amount">GST Excluded Amount 18%</label>
-                  <input type="number" class="form-control" id="amountGst" name="amountGst" placeholder="Amount 18% GST"
+                  <input type="number" class="form-control" id="amount_gst" name="amount_gst" placeholder="Amount 18% GST"
                     readonly>
                 </div>
                 <div class="form-group">
                   <label for="users">Users Pin</label>
-                  <input type="text" class="form-control" id="users" name="users" placeholder="Users">
+                  <input type="number" class="form-control" id="users" name="users" placeholder="Users">
                 </div>
                 <div class="form-group">
                   <label for="addOnUsers">Add-on Users Pin</label>
-                  <input type="text" class="form-control" id="addOnUsers" name="addOnUsers" placeholder="Add-on Users">
+                  <input type="number" class="form-control" id="add_on" name="add_on" placeholder="Add-on Users">
                 </div>
               </div>
 
@@ -85,7 +85,7 @@
       var amount = $('#amount').val();
       var gst = amount / 1.18;
       var gst_deducted = Math.round(gst * 100) / 100;
-      $('input[name="amountGst"]').val(gst_deducted);
+      $('#amount_gst').val(gst_deducted);
 
     });
     $('.submitBtn').click(function () {

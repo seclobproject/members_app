@@ -93,6 +93,9 @@
                                                 <?php echo $item['package_id']; ?>
                                             </td>
                                             <td>
+                                                <?php echo $item['status'] === 1 ? 'Active' : 'Inactive'; ?>
+                                            </td>
+                                            <td>
                                                 <?php echo $item['addOn_users']; ?>
                                             </td>
                                         </tr>
