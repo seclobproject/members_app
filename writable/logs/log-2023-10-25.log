@@ -1,0 +1,120 @@
+CRITICAL - 2023-10-25 09:44:41 --> Unclosed '{' on line 6
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 10:23:42 --> Class "BaseController" not found
+in APPPATH\Controllers\Login.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Login.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Login', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 10:35:00 --> Class "BaseController" not found
+in APPPATH\Controllers\Plan.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Plan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Plan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Plan')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Plan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 10:37:14 --> Undefined variable $title
+in APPPATH\Views\plan.php on line 2.
+ 1 APPPATH\Views\plan.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('plan', [], true)
+ 5 APPPATH\Controllers\Plan.php(9): view('plan')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 10:52:51 --> Undefined variable $title
+in APPPATH\Views\plan.php on line 2.
+ 1 APPPATH\Views\plan.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('plan', [], true)
+ 5 APPPATH\Controllers\Plan.php(9): view('plan')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 10:57:28 --> Undefined variable $title
+in APPPATH\Views\plan.php on line 2.
+ 1 APPPATH\Views\plan.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\plan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('plan', [], true)
+ 5 APPPATH\Controllers\Plan.php(9): view('plan')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:10:11 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Plan.php(9): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:11:20 --> Undefined property: App\Controllers\Plan::$load
+in APPPATH\Controllers\Plan.php on line 9.
+ 1 APPPATH\Controllers\Plan.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Plan::$load', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Plan.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:25:07 --> Undefined property: App\Controllers\Plan::$load
+in APPPATH\Controllers\Plan.php on line 9.
+ 1 APPPATH\Controllers\Plan.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Plan::$load', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Plan.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:26:16 --> Undefined property: App\Controllers\Plan::$load
+in APPPATH\Controllers\Plan.php on line 9.
+ 1 APPPATH\Controllers\Plan.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Plan::$load', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Plan.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:26:16 --> Undefined property: App\Controllers\Plan::$load
+in APPPATH\Controllers\Plan.php on line 9.
+ 1 APPPATH\Controllers\Plan.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Plan::$load', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Plan.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-25 11:36:39 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Plan.php(11): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Plan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Plan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')

@@ -1,0 +1,464 @@
+CRITICAL - 2023-10-27 04:34:10 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Member.php(22): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Member->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 04:55:39 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Member.php(22): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Member->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 04:55:53 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Member.php(22): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Member->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 05:08:27 --> Undefined array key "id"
+in APPPATH\Models\UserModel.php on line 21.
+ 1 APPPATH\Models\UserModel.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Models\\UserModel.php', 21)
+ 2 APPPATH\Controllers\Login.php(25): App\Models\UserModel->user([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 05:36:05 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 27.
+ 1 APPPATH\Controllers\Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Login.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 05:39:57 --> Undefined property: mysqli::$email
+in APPPATH\Models\UserModel.php on line 24.
+ 1 APPPATH\Models\UserModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$email', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Models\\UserModel.php', 24)
+ 2 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 05:48:45 --> Undefined array key "username"
+in APPPATH\Models\UserModel.php on line 28.
+ 1 APPPATH\Models\UserModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Models\\UserModel.php', 28)
+ 2 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 05:48:59 --> mysqli_sql_exception: Unknown column 'super_admin@seclob.com' in 'where clause' in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `email`,...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `email`,...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `email`,...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Login.php(26): App\Models\UserModel->user(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Login->user()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 05:48:59 --> Unknown column 'super_admin@seclob.com' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `password`
+FROM `user`
+WHERE `super_admin@seclob`.`com` = :super_admin@seclob.com:', [...], false)
+ 2 APPPATH\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 05:50:00 --> mysqli_sql_exception: Unknown column 'super_admin@seclob.com' in 'where clause' in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Login.php(26): App\Models\UserModel->user(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Login->user()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 05:50:00 --> Unknown column 'super_admin@seclob.com' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `super_admin@seclob`.`com` = :super_admin@seclob.com:', [...], false)
+ 2 APPPATH\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 05:50:03 --> mysqli_sql_exception: Unknown column 'super_admin@seclob.com' in 'where clause' in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Login.php(26): App\Models\UserModel->user(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Login->user()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 05:50:03 --> Unknown column 'super_admin@seclob.com' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `super_admin@seclob`.`com` = :super_admin@seclob.com:', [...], false)
+ 2 APPPATH\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 05:52:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND 2 = :2:
+AND 3 = :3:' at line 3 in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `usernam...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usernam...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usernam...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `usernam...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Login.php(26): App\Models\UserModel->user(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Login->user()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 05:52:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND 2 = :2:
+AND 3 = :3:' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `username`, `password`
+FROM `user`
+WHERE 0 = :0:
+AND 1 = :1:
+AND 2 = :2:
+AND 3 = :3:', [...], false)
+ 2 APPPATH\Models\UserModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(26): App\Models\UserModel->user([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:09:26 --> Constant expression contains invalid operations
+in APPPATH\Controllers\Login.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:12:24 --> Undefined global variable $_SESSION
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:17:12 --> Undefined global variable $_SESSION
+in APPPATH\Controllers\Login.php on line 29.
+ 1 APPPATH\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Login.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:20:54 --> Undefined array key "isLoggedIn"
+in APPPATH\Controllers\Package.php on line 18.
+ 1 APPPATH\Controllers\Package.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isLoggedIn"', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Package.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:21:47 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:23:11 --> Undefined global variable $_SESSION
+in APPPATH\Controllers\Package.php on line 13.
+ 1 APPPATH\Controllers\Package.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Package.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:33:50 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:35:22 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:35:58 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:36:57 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:38:34 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:38:48 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:40:31 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'D:\\projects\\xampp\\htdocs\\seclob_app\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'D:\\projects\\xampp\\htdocs\\seclob_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(996): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1069): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 06:47:12 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\Login.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Login.php', 55)
+ 2 APPPATH\Controllers\Login.php(55): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->logout()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 09:49:26 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Package.php(34): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 11:31:31 --> Undefined property: App\Controllers\Package::$PackageModel
+in APPPATH\Controllers\Package.php on line 46.
+ 1 APPPATH\Controllers\Package.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Package::$PackageModel', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Controllers\\Package.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 11:33:13 --> mysqli_sql_exception: Table 'seclob_app.plan_tbl' doesn't exist in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pl...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\PackageModel.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Package.php(47): App\Models\PackageModel->add(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Package->save()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 11:33:13 --> Table 'seclob_app.plan_tbl' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `plan_tbl` (`planName`, `amount`, `amount_gst`, `users`, `add_on_users`) VALUES (:planName:, :amount:, :amount_gst:, :users:, :add_on_users:)', [...], false)
+ 2 APPPATH\Models\PackageModel.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Package.php(47): App\Models\PackageModel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+ERROR - 2023-10-27 11:33:31 --> mysqli_sql_exception: Unknown column 'planName' in 'field list' in D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\projects\xampp\htdocs\seclob_app\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pa...', 0)
+#1 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 D:\projects\xampp\htdocs\seclob_app\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 D:\projects\xampp\htdocs\seclob_app\app\Models\PackageModel.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\projects\xampp\htdocs\seclob_app\app\Controllers\Package.php(47): App\Models\PackageModel->add(Array)
+#6 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(942): App\Controllers\Package->save()
+#7 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+#8 D:\projects\xampp\htdocs\seclob_app\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\projects\xampp\htdocs\seclob_app\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\projects\xampp\htdocs\seclob_app\system\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xam...')
+#11 {main}
+CRITICAL - 2023-10-27 11:33:31 --> Unknown column 'planName' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `package_tbl` (`planName`, `amount`, `amount_gst`, `users`, `add_on_users`) VALUES (:planName:, :amount:, :amount_gst:, :users:, :add_on_users:)', [...], false)
+ 2 APPPATH\Models\PackageModel.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Package.php(47): App\Models\PackageModel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 11:59:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(230): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PackageModel.php(29): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Package.php(58): App\Models\PackageModel->get()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->list()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 12:01:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(230): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PackageModel.php(29): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Package.php(58): App\Models\PackageModel->get()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->list()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 12:09:53 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Package.php(60): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Package->list()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Package))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
+CRITICAL - 2023-10-27 12:16:52 --> Undefined variable $users
+in APPPATH\Views\test.php on line 2.
+ 1 APPPATH\Views\test.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php', 2)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\projects\\xampp\\htdocs\\seclob_app\\app\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Member.php(22): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Member->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\projects\\xampp\\htdocs\\seclob_app\\public\\index.php')
