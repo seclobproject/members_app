@@ -30,7 +30,7 @@ class PackageModel extends Model
     {
         if ($id === false) {
             $query = $this->db->query('SELECT * FROM package_tbl');
-            $results = $query->getResultArray();            
+            $results = $query->getResultArray();          
             return $results;
         } else {
             return $this->getWhere(['id' => $id]);

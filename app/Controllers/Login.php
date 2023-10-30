@@ -36,20 +36,26 @@ class Login extends BaseController
 		$result = $model->user($req);
         $tmp = (array) $result;
         if(count($tmp) > 0){            
-            session_start();
-            $user = $result;
-            $_SESSION['email'] = $user->email;
-            $_SESSION['sponsor'] = $user->name;            
-            $_SESSION['userId'] = $user->id;
-            $_SESSION['isLoggedIn'] = true;
+            $session  = session();
+            $user = $result;            
             //fetch sponsor id
+            $sponsor_id = '';
             $req_sponsor = array('id'=>$user->id);
             $result_sponsor = $model->getSponsor($req_sponsor);
             $tmp_sponsor = (array) $result_sponsor;            
             if(count($tmp_sponsor) > 0){                
-                $_SESSION['sponsor_id'] = $result_sponsor->sponsor_id;
+                $sponsor_id = $result_sponsor->sponsor_id;
             }
-            return redirect()->redirect("/packages");
+            $newdata = [
+                'email'  => $user->email,
+                'sponsor'     => $user->name,
+                'userId'     => $user->id,
+                'isLoggedIn' => true,
+                'sponsor_id' => $sponsor_id
+            ];
+            
+            $session->set($newdata);
+            return redirect()->redirect("/package/list");
         }else{
             return redirect()->redirect("/login");
         }

@@ -17,10 +17,13 @@ class Member extends Controller
 
     public function add()
     {
-        if(isset($_SESSION['sponsor_id'])){
-            $data['sponsor_id'] = $_SESSION['sponsor_id'];
+        $session = session();
+        if($session->get('sponsor_id')){
+            $data['sponsor_id'] = $session->get('sponsor_id');
+            $data['sponsor_name'] = $session->get('sponsor');
         }else{
             $data['sponsor_id'] = '';
+            $data['sponsor_name'] = '';
         }
         return view('header')
             . view('menu')
@@ -36,12 +39,17 @@ class Member extends Controller
         $email = $this->request->getPost('email');        
         $address = $this->request->getPost('address');
         $package = $this->request->getPost('package');
-        $addOn = $this->request->getPost('addOn');
+        if($this->request->getPost('add_on')){
+            $addOn = $this->request->getPost('add_on');
+        }else{
+            $addOn = 0;
+        }
+        
 
 
         $data = [
             'name' => $name,
-            'member_type'=>'User',
+            'user_type_id'=>3,
             'phone' => $phone,
             'email' => $email,
             'address' => $address,
@@ -52,20 +60,28 @@ class Member extends Controller
 
         $result = $model->add($data);
         if ($result) {
-            echo "New package added successfully.";
+            echo "Member added successfully.";
         } else {
             echo "Something went wrong";
         }
-        return redirect()->redirect("/package");
+        return redirect()->redirect("/members");
     }
 
     
     public function profile()
     {
-
+        $session = session();
+        // Get Sponsor ID, Name from Session
+        if($session->get('sponsor_id')){
+            $data['sponsor_id'] = $session->get('sponsor_id');
+            $data['sponsor_name'] = $session->get('sponsor');
+        }else{
+            $data['sponsor_id'] = '';
+            $data['sponsor_name'] = '';
+        }
         return view('list_header') 
         .  view('menu') 
-        . view('profile')
+        . view('profile',$data)
         . view('list_footer');
     }
 
@@ -76,6 +92,15 @@ class Member extends Controller
             $data['members'] = $result;
         }else{
             $data['members'] = [];
+        }
+        $session = session();
+        // Get Sponsor ID, Name from Session
+        if($session->get('sponsor_id')){
+            $data['sponsor_id'] = $session->get('sponsor_id');
+            $data['sponsor_name'] = $session->get('sponsor');
+        }else{
+            $data['sponsor_id'] = '';
+            $data['sponsor_name'] = '';
         }
         return view('list_header') 
         .  view('menu') 

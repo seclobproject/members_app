@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Package</h1>
+          <!-- <h1>Member</h1> -->
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -31,7 +31,8 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action='<?php echo route_to('member/save') ?>' method="post" accept-charset="utf-8">
+            <form action='<?php echo route_to('member/save') ?>' method="post" name="member_add" id="member_add"
+              accept-charset="utf-8">
               <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
               <?= csrf_meta() ?>
               <div class="card-body">
@@ -43,7 +44,7 @@
                 <div class="form-group">
                   <label for="sponsorName">Sponsor Name</label>
                   <input type="text" class="form-control" id="sponsorName" name="sponsorName" placeholder="Sponsor Name"
-                    readonly>
+                    value="<?php echo $sponsor_name ?>" readonly>
                 </div>
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -63,15 +64,13 @@
                 </div>
                 <div class="form-group">
                   <label for="package">Choose the Package</label>
-                  <select class="custom-select rounded-0" id="package" name="packages">
-                    <option>Value 1</option>
+                  <select class="custom-select rounded-0" id="package" name="package">
+                    <option value="">Select</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="addOn">Choose Add-on Package</label>
-                  <select class="custom-select rounded-0" id="addOn" name="addOn">
-                    <option>Value 1</option>
-                  </select>
+                  <label for="addOn">Add-on Users</label>
+                  <input type="number" class="form-control" id="add_on" name="add_on" placeholder="Add-on package">
                 </div>
                 <!-- 
                   <div class="form-check">
@@ -101,12 +100,34 @@
 <script src="../../jquery-validator/dist/jquery.validate.js"></script>
 <script>
   $(document).ready(function () {
-    $('#amount').change(function () {
-      //$('#amountGst').addClass
-      var amount = $('#amount').val();
-      var gst = (amount * 18) / 100;
-      var gst_deducted = amount - gst;
-      $('input[name="amountGst"]').val(gst_deducted);
+    $('#member_add').validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        address: 'required',
+        email: {
+          required: true,
+          email: true,//add an email rule that will ensure the value entered is valid email id.
+          maxlength: 255,
+        },
+      },
+      messages: {
+        name: 'Name is required',
+        phone: 'Phone is required',
+        address: 'Address is required',
+        email: 'Enter a valid email',
+      },
+    });
+    $.ajax({
+      type: "GET",
+      url: "/packages",
+      dataType: "json",
+      contentType: "application/json",
+      success: function (res) {
+        $.each(res, function (data, value) {
+          $("#package").append($("<option></option>").val(value.id).html(value.package_name));
+        })
+      }
 
     });
   });

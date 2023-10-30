@@ -31,14 +31,14 @@
                             <strong><i class="fas fa-book mr-1"></i> Sponsor ID</strong>
 
                             <p class="text-muted">
-                                SST374894
+                            <?php echo $sponsor_id; ?>
                             </p>
 
                             <hr>
 
                             <strong><i class="fas fa-map-marker-alt mr-1"></i> Sponsor Name</strong>
 
-                            <p class="text-muted">Secure T</p>
+                            <p class="text-muted"><?php echo $sponsor; ?></p>
 
                             <hr>
 
