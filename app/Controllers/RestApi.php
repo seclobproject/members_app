@@ -15,7 +15,11 @@ class RestApi extends ResourceController
     protected $format    = 'json';
     public function index()
     {
-        return $this->respond($this->model->findAll(), 200);
+        $data = $this->respond($this->model->packages(), 200);
+        header('Content-Type: application/json; charset=utf-8');
+        //header('Content-Type: application/json');
+        return $data;
+       //echo json_encode( $data );
     }
 
     /**

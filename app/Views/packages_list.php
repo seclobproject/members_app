@@ -26,9 +26,14 @@
                     <div class="card">
                         <div class="card-header">
                             <!-- <h3 class="card-title">Members</h3> -->
-                            <a class="btn btn-app" href="<?php echo route_to('package/add') ?>">
-                                <i class="fas fa-plus"></i>
-                            </a>
+                            <div class="row">
+                                <div class="col-md-11"></div>
+                                <div class="col-md-1">
+                                    <a class="btn btn-primary" href="<?php echo route_to('package/add') ?>">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -41,6 +46,7 @@
                                         <th>Users</th>
                                         <th>Add-on Users</th>
                                         <th>Status</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -65,6 +71,11 @@
                                             <td>
                                                 <?php echo $item['status'] === 1 ? 'Active' : 'Inactive'; ?>
                                             </td>
+                                            <td>
+                                                <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                                                <a href="#" class="btn btn-edit"><i class="fas fa-edit"></i></a>
+                                                <a href="#" class="btn btn-edit"><i class="fas fas fa-trash"></i></a>
+                                            </td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -76,9 +87,28 @@
                                         <th>Users</th>
                                         <th>Add-on Users</th>
                                         <th>Status</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </tfoot>
                             </table>
+
+                            <!-- <table id="example" class="display" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>First name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>fgfgfg</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>First name</th>
+                                    </tr>
+                                </tfoot>
+                            </table> -->
                         </div>
                         <!-- /.card-body -->
                     </div>
@@ -97,7 +127,7 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Page specific script -->
 <script>
-    $(function () {
+    $(document).ready(function () {
         $('#package_list').DataTable({
             "paging": true,
             "lengthChange": false,
@@ -106,12 +136,61 @@
             "info": true,
             "autoWidth": false,
             "responsive": true,
+            // "processing": true,
+            // "serverSide": true,
+            // "crossDomain": true,
             // 'ajax': {
-            //     'url': 'api/packages/list'
+            //     'url': '/packages'
             // },
             // 'columns': [
             //     { data: 'package_name' }
-            // ]
+            // ],
+            // method: 'GET',
+            // dataType: 'json',
+            // success: function (data) {
+            //     console.log('data>>',data)
+            //     // Call this function when the API request succeeds
+            //     //populateTable(data);
+            // },
+            // error: function () {
+            //     // Handle errors here
+            // }
         });
+        // $('#package_list').on('change', 'input', function () {
+        //     var row = $(this).closest('tr');
+        //     var total = 0;
+        //     $('input', row).each(function () {
+        //         //total += Number($(this).val());
+        //     });
+        //     $('.total', row).text(total);
+        // });
+        // $('#example').dataTable({
+        //     "processing": true,
+        //     "serverSide": true,
+        //     //     ajax: function (d, cb) {
+        //     //     fetch('/packages')
+        //     //         .then(response => response.json())
+        //     //         .then(data => cb(data));
+        //     // },
+        //     "ajax": {
+        //         "url": "<?=site_url('packages')?>",
+        //         "dataType": "json",
+        //         "type": 'GET',
+        //         "error": function (e) {
+        //             alert(e);
+        //         },
+        //         "success": function (e) {
+        //             console.log('>>', e);
+        //             return JSON.stringify(e)
+        //         },
+        //         // "data": function (d) {
+        //         //     console.log('hhh>>>', JSON.stringify(d));
+        //         //     return JSON.stringify(d);
+        //         // }
+        //     },
+        //     "columns": [
+        //         { "data": "package_name" },
+        //     ]
+        // });
     });
 </script>

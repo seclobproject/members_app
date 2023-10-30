@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Package</h1>
+          <!-- <h1>Package</h1> -->
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -31,7 +31,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="<?php echo route_to('package/save') ?>" method="post" accept-charset="utf-8" id="plan_form">
+            <form action="<?php echo route_to('package/save') ?>" method="post" accept-charset="utf-8" id="package_add">
               <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
               <?= csrf_meta() ?>
               <div class="card-body">
@@ -106,6 +106,33 @@
       //   error: function () { alert("Error posting feed."); }
       // });
 
+    });
+    $('#package_add').validate({
+      rules: {
+        planName: 'required',
+        amount: 'required',
+        users: 'required'
+      },
+      messages: {
+        planName: 'Name is required',
+        amount: 'Amount is required',
+        users: 'Enter users',
+        // email: {
+        //   required: "Please enter a email address",
+        //   email: "Please enter a valid email address"
+        // },
+      },
+      errorElement: 'span',
+      errorPlacement: function (error, element) {
+        error.addClass('invalid-feedback');
+        element.closest('.form-group').append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass('is-invalid');
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass('is-invalid');
+      }
     });
   });
 </script>

@@ -29,7 +29,7 @@
                         <div class="card-header">
                             <!-- <h3 class="card-title">Users</h3> -->
                             <div class="row">
-                                <div class="col-md-10">
+                                <div class="col-md-11">
                                     <!-- About Me Box -->
                                     <div class="card card-primary">
                                         <!-- <div class="card-header">
@@ -57,8 +57,8 @@
                                     </div>
                                     <!-- /.card -->
                                 </div>
-                                <div class="col-md-2">
-                                    <a class="btn btn-app" href="<?php echo route_to('member/add') ?>">
+                                <div class="col-md-1">
+                                    <a class="btn btn-primary" href="<?php echo route_to('member/add') ?>">
                                         <i class="fas fa-plus"></i>
                                     </a>
                                 </div>

@@ -38,4 +38,18 @@ class ApiModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function packages($id = false)
+    {
+        if ($id === false) {
+            $query = $this->db->query('SELECT * FROM package_tbl');
+            //$data =  $query->getResultObject();
+            //print_r(json_encode($data));
+            //die();
+            $results = $query->getResultArray();          
+            return $results;
+        } else {
+            return $this->getWhere(['id' => $id]);
+        }
+    }
 }

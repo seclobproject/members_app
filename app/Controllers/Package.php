@@ -16,6 +16,7 @@ class Package extends Controller
         //$userData = $session->get();
         //$userData['isLoggedIn'];
         return view('header')
+            . view('top_navbar')
             . view('menu')
             . view('package')
             . view('footer');
@@ -24,6 +25,7 @@ class Package extends Controller
     public function add()
     {
         return view('header')
+            . view('top_navbar')
             . view('menu')
             . view('package')
             . view('footer');
@@ -58,7 +60,7 @@ class Package extends Controller
         } else {
             echo "Something went wrong";
         }
-        return redirect()->redirect("/packages");
+        return redirect()->redirect("/package/list");
     }
 
     public function list()
@@ -71,6 +73,7 @@ class Package extends Controller
             $data['packages'] = [];
         }
         return view('list_header')
+            . view('top_navbar')
             . view('menu')
             . view('packages_list', $data)
             . view('list_footer');

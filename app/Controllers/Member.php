@@ -1,14 +1,17 @@
 <?php
 
- namespace App\Controllers;
- use CodeIgniter\Controller;
- use App\Models\MemberModel;
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use App\Models\MemberModel;
+
 class Member extends Controller
 {
     public function index()
     {
-        
+
         return view('header')
+            . view('top_navbar')
             . view('menu')
             . view('member')
             . view('footer');
@@ -18,16 +21,17 @@ class Member extends Controller
     public function add()
     {
         $session = session();
-        if($session->get('sponsor_id')){
+        if ($session->get('sponsor_id')) {
             $data['sponsor_id'] = $session->get('sponsor_id');
             $data['sponsor_name'] = $session->get('sponsor');
-        }else{
+        } else {
             $data['sponsor_id'] = '';
             $data['sponsor_name'] = '';
         }
         return view('header')
+            . view('top_navbar')
             . view('menu')
-            . view('member',$data)
+            . view('member', $data)
             . view('footer');
     }
     public function save()
@@ -36,26 +40,26 @@ class Member extends Controller
         $data = $_POST;
         $name = $this->request->getPost('name');
         $phone = $this->request->getPost('phone');
-        $email = $this->request->getPost('email');        
+        $email = $this->request->getPost('email');
         $address = $this->request->getPost('address');
         $package = $this->request->getPost('package');
-        if($this->request->getPost('add_on')){
+        if ($this->request->getPost('add_on')) {
             $addOn = $this->request->getPost('add_on');
-        }else{
+        } else {
             $addOn = 0;
         }
-        
+
 
 
         $data = [
             'name' => $name,
-            'user_type_id'=>3,
+            'user_type_id' => 3,
             'phone' => $phone,
             'email' => $email,
             'address' => $address,
-            'parent_member_id'=>1,
-            'package_id'=>1,
-            'addOn_users'=>$addOn
+            'parent_member_id' => 1,
+            'package_id' => 1,
+            'addOn_users' => $addOn
         ];
 
         $result = $model->add($data);
@@ -67,44 +71,47 @@ class Member extends Controller
         return redirect()->redirect("/members");
     }
 
-    
+
     public function profile()
     {
         $session = session();
         // Get Sponsor ID, Name from Session
-        if($session->get('sponsor_id')){
+        if ($session->get('sponsor_id')) {
             $data['sponsor_id'] = $session->get('sponsor_id');
             $data['sponsor_name'] = $session->get('sponsor');
-        }else{
+        } else {
             $data['sponsor_id'] = '';
             $data['sponsor_name'] = '';
         }
-        return view('list_header') 
-        .  view('menu') 
-        . view('profile',$data)
-        . view('list_footer');
+        return view('list_header')
+            . view('top_navbar')
+            . view('menu')
+            . view('profile', $data)
+            . view('list_footer');
     }
 
-    public function list(){
-        $model = new MemberModel();    
-		$result = $model->get();
+    public function list()
+    {
+        $model = new MemberModel();
+        $result = $model->get();
         if ($result) {
             $data['members'] = $result;
-        }else{
+        } else {
             $data['members'] = [];
         }
         $session = session();
         // Get Sponsor ID, Name from Session
-        if($session->get('sponsor_id')){
+        if ($session->get('sponsor_id')) {
             $data['sponsor_id'] = $session->get('sponsor_id');
             $data['sponsor_name'] = $session->get('sponsor');
-        }else{
+        } else {
             $data['sponsor_id'] = '';
             $data['sponsor_name'] = '';
         }
-        return view('list_header') 
-        .  view('menu') 
-        . view('member_list', $data)
-        . view('list_footer');       
+        return view('list_header')
+            . view('top_navbar')
+            . view('menu')
+            . view('member_list', $data)
+            . view('list_footer');
     }
 }
